@@ -9,32 +9,40 @@
 <body> 
 
     <header>
-         <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/SumecFirman1.8kVAgeneratorSPG-2900.webp" alt="SumecFirman 1">
-        <h1>Ezicko & Bros -SUMEC firman generator<br><br></h1>
-        <h2>Your trusted source for sumec firman generators</h2>
+        <h1>EZICKO & BROS</h1>
+         <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+         </nav>
     </header>
-    <main>
-        <section class="products">
-            <div class="product">
+
+        <section class="hero">
+            <div class="hero-text"> 
+                <h2>SUMEC FIRMAN GENERATORS</h2>
+                <p>Reliable power solutions</p>
                 <img src="images/SumecFirman1.8kVAgeneratorSPG-2900.webp" alt="SumecFirman generator 1"/>
-                <h2>Sumec Firman SPG-2900</h2>
-                <p>$300,000</p>
-                <button onclick="addToCart('Sumec Firman SPG-2900',150000)">Add to Cart</button>
+                <button onclick="ShopNow()">Shop Now</button>
             </div>
+        </section>
+        <section class="products">
             <div class="product">
                 <img src="images/SumecFirman2.8kVAgeneratorECO-3990ES.webp" alt="SumecFirman generator 2"/>
                 <h2>Sumec Firman.8kVAgeneratorECO-3990ES</h2>
                 <p>$400,000</p>
-                <button onclick="addToCart('Sumec Firman 8kVAgeneratorECO-3990ES',95000)">Add to Cart</button>
+                <button onclick="addToCart('Sumec Firman 8kVAgeneratorECO-3990ES',400000)">Add to Cart</button>
             </div>
             <div class="product">
                <img src="images/SumecFirman2.8kVAgeneratorSPG-3000E2.webp" alt="SumecFirman generator 3"/>
                 <h2>Sumec Firman.8kVAgeneratorSPG-3000E2</h2>
                 <p>$350,000</p>
-                <button onclick="addToCart('Sumec Firman 8kVAgeneratorSPG-3000E2',120000)">Add to Cart</button>
+                <button onclick="addToCart('Sumec Firman 8kVAgeneratorSPG-3000E2',3500000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/SumecFirman1.8kVAgeneratorSPG-2900.webp" alt="SumecFirman generator 4"/>
+                <h2>Sumec Firman1.8kVAgeneratorSPG-2900</h2>
+                <p>$300,000</p>
+                <button onclick="addToCart('SumecFirman1.8kVAgeneratorSPG-2900',300000)">Add to Cart</button>
             </div>
         </section>
 
@@ -43,7 +51,13 @@
             <ul id="cart-items"></ul>
             <p>total:#<span id="cart-total">0</span></p>
         </section>
-    </main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form" onsubmit="return submitForm()">
+                
+
+            </form>
+        </section>
 
     <script src="script.js"></script>
 </body>

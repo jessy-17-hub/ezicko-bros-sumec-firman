@@ -1,14 +1,11 @@
-let cart=[];
-let total=0;
+function ShopNow() {
+    alert("Redirecting to product section...");
+    window.scrollTo({
+        top: document.querySelector("products").offsetTop,
+        behavior:"smooth"
+    })
+}
 
- addEventListener('click', function (addToCart) {
-    const cartItems =document.getElementById('cart-items');
-    const cartTotal =document.getElementById('cart-total');
-    cartItems.innerHTML='';
-    cart.forEach((item,index)) => {
-        const li=document.createElement('li');
-        li.textContent = ${item.name}- ${item.price.tolocalstring()};
-        cartItems.appendChild(li);
- }
-    cartTotal.textContent=total.toLocaleString();
+function addToCart(product) {
+    alert(product+ "has been added to cart!");
 }
