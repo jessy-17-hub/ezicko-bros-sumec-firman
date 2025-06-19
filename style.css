@@ -1,3 +1,8 @@
+/* added smooth scroll behaviour */
+*{
+    scroll-behavior: smooth;
+}
+
 .body{
     font-family: 'segoe UI', sans-serif;
     margin: 0;

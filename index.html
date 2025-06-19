@@ -29,7 +29,8 @@
                 <button onclick="ShopNow()">Shop Now</button>
             </div>
         </section>
-        <section class="products">
+        <!-- added an id of products so that the navigaton can work -->
+        <section id="products" class="products">
             <div class="product">
                 <img src="images/SumecFirman2.8kVAgeneratorECO-3990ES.webp" alt="SumecFirman generator 2"/>
                 <h2>Sumec Firman.8kVAgeneratorECO-3990ES</h2>
@@ -55,14 +56,18 @@
             <ul id="cart-items"></ul>
             <p>total:#<span id="cart-total">0</span></p>
         </section>
-        <section class="contact">
+        <!-- added an id of contact too so that the navigaton can work -->
+
+        <section id="contact" class="contact">
             <h2>Contact Us</h2>
             <form onsubmit="return sendWhatsapp()">
                 <input type="text" id="name" placeholder="your Name" required />
                 <input type="tel" id="phone" placeholder="phone Number" required />
                 <input type="text" id="product" placeholder="product Name" required />
                 <textarea id="message" rows="4" placeholder="Any message?(Optional)"></textarea>
-                <button type="submit">Send via WhatsApp</button>
+
+                <button type="submit" id="submit">Send via WhatsApp</button>
+
             </form>
         </section>
         <footer>
