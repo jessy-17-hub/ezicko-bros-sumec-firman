@@ -5,6 +5,15 @@ function ShopNow() {
 
 function addToCart(product) {
     alert(product + " has been added to cart!");
+
+  let  cartNumber = document.getElementById('cart-total');
+
+  cartNum = Number(cartNumber.innerText);
+  cartNum += 1;
+
+cartNumber.innerText = cartNum;
+
+
 }
 
 // WhatsApp sending logic

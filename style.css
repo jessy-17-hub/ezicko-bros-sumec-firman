@@ -1,27 +1,69 @@
 /* added smooth scroll behaviour */
 *{
     scroll-behavior: smooth;
-}
-
-.body{
-    font-family: 'segoe UI', sans-serif;
+     font-family: 'segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
-    color: #111;
-}
-.header{
-    background-color: #101828;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-.nav a {
-    color: white;
-    margin-left: 20px;
+    box-sizing: border-box;
     text-decoration: none;
 }
+
+body{
+    position: relative;
+    background: #f5f5f5;
+    color: #111;
+    display: flex;
+
+}
+main{
+    width: 80%;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+aside{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 19%;
+    background: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+header{
+    background-color: #101828;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(218, 165, 32, 0.037);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+nav h1{
+    width: 20%;
+}
+.nav-links{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    /* gap: 30px; */
+    margin-right: 10rem;
+}
+.nav-links li:hover a{
+    color: goldenrod;
+    letter-spacing: 5px;
+    transform: scaleX(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.nav-links li a{
+    color: white;
+}
+
 .hero{
     display: flex;
     align-items: center;
@@ -55,18 +97,19 @@
     flex-wrap: wrap;
 
 }
-.navbar{
+/* .navbar{
     background:#9776;
     padding: 15px 20px;
     display: flex;
     align-items: center;
     box-shadow: 10px 0 1px 1px rgb(234, 231, 231);
-}
+} */
 .product{
     background: white;
     padding: 20px;
     border: 1px solid #ddd;
     width: 300px;
+    /* width: fit-content; */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .product img{
@@ -83,6 +126,7 @@
     cursor: pointer;
 }
 .cart{
+    width: 25%;
     background-color: white;
     margin: 2px auto;
     padding:20px;

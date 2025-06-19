@@ -8,19 +8,21 @@
 </head>
 <body> 
 
-    <header>
+   <main>
+     <header>
+         <nav>
         <h1>EZICKO & BROS</h1>
-         <nav class="navbar"> 
-            <div class="menu-toggle" id="menu-toggle"></div>
+            <!-- <div class="menu-toggle" id="menu-toggle"></div> -->
+
             <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#products">Generators</a></li>
                 <li><a href="#contact">Contact</a></li> 
+                <li><a href="#cart">Cart</a></li>
             </ul>
          </nav>
-    </header>
 
-        <section class="hero">
+         <!-- header content -->
             <div class="hero-text"> 
                 <div class="menu-toggle" id="menu-toggle"></div>
                 <h2>SUMEC FIRMAN GENERATORS</h2>
@@ -28,7 +30,9 @@
                 <img src="images/SumecFirman1.8kVAgeneratorSPG-2900.webp" alt="SumecFirman generator 1"/>
                 <button onclick="ShopNow()">Shop Now</button>
             </div>
-        </section>
+         
+    </header>
+
         <!-- added an id of products so that the navigaton can work -->
         <section id="products" class="products">
             <div class="product">
@@ -51,11 +55,7 @@
             </div>
         </section>
 
-        <section class="Cart">
-            <h2>🛒 Shopping Cart</h2>
-            <ul id="cart-items"></ul>
-            <p>total:#<span id="cart-total">0</span></p>
-        </section>
+      
         <!-- added an id of contact too so that the navigaton can work -->
 
         <section id="contact" class="contact">
@@ -73,6 +73,17 @@
         <footer>
             <p>&copy; 2025 Ezicko & Bros, Abuja Nigeria</p>
         </footer>
+   </main>
+
+   <aside>
+      <div class="Cart">
+            <h2>🛒 Shopping Cart</h2>
+            <ul id="cart-items">
+                
+            </ul>
+            <p>total:<span id="cart-total">0</span></p>
+        </div>
+   </aside>
 
     <script src="script.js"></script>
 </body>
