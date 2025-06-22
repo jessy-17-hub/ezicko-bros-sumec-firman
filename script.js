@@ -1,3 +1,32 @@
+//mobile menu toggle
+const menuBtn = document.querySelector('.menu-btn');
+
+const closeMenu = document.querySelector('.closemenu-btn');
+
+//show mobile menu
+menuBtn.addEventListener('click', ()=>{
+    menuBtn.style.display = 'none';
+    document.getElementById('nav-links').style.display = 'flex';
+})
+
+//close mobile menu
+closeMenu.addEventListener('click', ()=>{
+    menuBtn.style.display = 'block';
+    document.getElementById('nav-links').style.display = 'none';
+})
+
+//also close mobile menu when i click on a link
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('nav-links').style.display = 'none';
+        menuBtn.style.display = 'block';
+    })
+})
+
+
+
+
+
 function ShopNow() {
     alert("Redirecting to product section...");
     document.getElementById("products").scrollIntoView({ behavior: "smooth" });
