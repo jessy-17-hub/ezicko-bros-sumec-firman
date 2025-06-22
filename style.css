@@ -40,6 +40,7 @@ nav{
     padding: 10px;
     backdrop-filter: blur(10px);
 }
+
 nav h1{
     width: 20%;
 }
@@ -62,6 +63,15 @@ nav h1{
 }
 .nav-links li a{
     color: white;
+}
+.closemenu-btn,.menu-btn{
+    padding:0 10px ;
+    background: none;
+    color:violet;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
 }
 
 .hero{
@@ -161,15 +171,8 @@ nav h1{
     padding: 12px;
     cursor: point;
 }
-@media (max-width:768px) {
-    .menu-toggle {
-        display: block;
-        font-size: 26px;
-        cursor: pointer;
-    }
-}
-.menu-toggle:hover {
-    opacity: 0.8;
+.contact button:hover {
+    background: #7e8f8a;
 }
 .footer{
     background: #1d4ed8;
