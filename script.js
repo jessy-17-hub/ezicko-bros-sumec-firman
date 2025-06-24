@@ -16,16 +16,13 @@ closeMenu.addEventListener('click', ()=>{
 })
 
 //also close mobile menu when i click on a link
-document.querySelectorAll('#nav-links a').forEach(link => {
+
+ document.querySelectorAll('#nav-links a').forEach(link => {
     link.addEventListener('click', () => {
-        document.getElementById('nav-links').style.display = 'none';
-        menuBtn.style.display = 'block';
+         document.getElementById('nav-links').style.display = 'none';
+       menuBtn.style.display = 'block';
     })
-})
-
-
-
-
+ })
 
 function ShopNow() {
     alert("Redirecting to product section...");
