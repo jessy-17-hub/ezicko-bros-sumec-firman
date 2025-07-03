@@ -71,7 +71,7 @@ nav h1 {
   padding: 0 10px;
   background: none;
   color: violet;
-  border: none;
+  border: none; 
   font-size: 35px;
   cursor: pointer;
   display: none;
