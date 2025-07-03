@@ -58,7 +58,7 @@ nav h1 {
   margin-right: 10rem;
 }
 .nav-links li:hover a {
-  color: goldenrod;
+  color: rgb(28, 26, 23);
   letter-spacing: 5px;
   transform: scaleX(1.1);
   transition: all 0.3s ease-in-out;
@@ -70,7 +70,7 @@ nav h1 {
 .menu-btn {
   padding: 0 10px;
   background: none;
-  color: violet;
+  color: rgb(166, 161, 184);
   border: none; 
   font-size: 35px;
   cursor: pointer;
@@ -214,7 +214,7 @@ nav h1 {
   object-fit: cover;
   object-position: center;
   margin-bottom: 10px;
-  border-bottom: 2px solid brown;
+  border-bottom: 2px solid rgb(165, 42, 165);
   border-radius: 15px;
 }
 .product h2{
@@ -328,8 +328,8 @@ nav h1 {
     background: rgba(255, 217, 0, 0.26);
     padding: 40px 50px;
     border-radius: 15px;
-    border: 2px solid gold;
-    box-shadow: 2px 5px 5px gold;
+    border: 2px solid rgb(179, 177, 162);
+    box-shadow: 2px 5px 5px rgb(229, 185, 199);
     padding-top: 3rem;
     backdrop-filter: blur(200px);
 
@@ -395,13 +395,13 @@ nav h1 {
     background: rgba(255, 217, 0, 0.311);
     padding: 20px 30px;
     border-radius: 15px;
-    border: 1px solid gold;
+    border: 1px solid rgb(135, 130, 101);
     padding-top: 3rem;
     backdrop-filter: blur(10px);
     display: none;
   }
   .nav-links li {
-    border-bottom: 2px solid goldenrod;
+    border-bottom: 2px solid rgb(101, 96, 84);
   }
   .nav-links li:hover a {
     letter-spacing: 3px;
